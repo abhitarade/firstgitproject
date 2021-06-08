@@ -20,6 +20,18 @@ public class SeleniumOperations
 	
 	//validate test case
 	
+	public static void validatebyurl(Object [] vburl)
+	{
+		String url=(String) vburl[0];
+		String acturl=driver.getCurrentUrl();
+		if(url.equalsIgnoreCase(acturl))
+		{System.out.println("Test Case pass");}
+		else {System.out.println("Test case failed");}
+		
+	}
+	
+	
+	
 	public static void validate(Object [] val)
 	{
 		
